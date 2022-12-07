@@ -1,0 +1,46 @@
+.shape {
+    -webkit-shape-outside: polygon(90% 0, 100% 0, 0 100%, 0 100%);
+    shape-outside: polygon(90% 0, 100% 0, 10% 100%, 0 100%) content-box;
+    clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%) content-box;
+    float: left;
+    width: 500px;
+    height: 400px;
+    margin-left: 5%;
+    /* overflow: hidden; */
+    /* the following three lines are only for demonstration purposes */
+    /* background: #444;
+    -webkit-clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+    clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%); */
+}
+
+.shape2 {
+    -webkit-shape-outside: polygon(90% 0, 100% 0, 0 100%, 0 100%);
+    shape-outside: polygon(90% 0, 100% 0, 10% 100%, 0 100%) content-box;
+    clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%) content-box;
+    float: left;
+    width: 280px;
+    height: 250px;
+
+    /* margin-left: -30px; */
+    /* the following three lines are only for demonstration purposes */
+    /* background: #444;
+    -webkit-clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%);
+    clip-path: polygon(90% 0, 100% 0, 10% 100%, 0 100%); */
+}
+.parallelogram {
+    /* width: 800px; */
+    padding: 20px 20px 20px 0;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    transform: skew(-30deg);
+    /* background: #ccc; */
+    margin: 0 0 0 26%;
+}
+
+.parallelogram .text {
+    width: 830px;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    transform: skew(30deg);
+
+}

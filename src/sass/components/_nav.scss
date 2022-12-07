@@ -1,0 +1,17 @@
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        rotate: 6deg;
+        width: 100%;
+    }
+    li{
+        list-style: none;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+    a{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,94 @@
+// BREAKPOINTS
+@use "sass:map";
+@use "sass:meta";
+@use "sass:math";
+@use "breakpoints" as *;
+
+
+@mixin mq($size){
+    @if map.has-key($breakpoints, $size){
+        $breakpoint: map-get($breakpoints, $size);
+        @media screen and (min-width: $breakpoint){
+            @content;
+        }
+    } @else if meta.type-of($size) == number {
+        @if math.is-unitless($size){
+            @error 'when using a number with @mq() make sure to include a unit';
+        } @else {
+            @media screen and (min-width: $size){
+                @content;
+            }
+        }
+    } @else {
+        @error 'the keyword #{size} is not in the $breakpoints map';
+    }
+}
+
+// COLUMNS LAYOUT
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^=col-]{
+  flex-basis:100%;
+  padding: 0 .5rem;
+}
+
+@media (min-width: 40em){
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            flex: 0 0 calc(100% / ($columns / $i));
+        }
+        // .col-offset-#{$i}{
+        //     margin-left: calc(100% / (($columns / $i)));
+        // }
+    }
+}
+
+
+
+// @mixin create-mq($breakpoint, $min-or-max) {
+//   @if($breakpoint == 0) {
+//     @content;
+//   } @else {
+//     @media screen and (#{$min-or-max}-width: calc($breakpoint *1px)) {
+//       @content;
+//     }
+//   }
+// }
+
+// @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+//   @include create-mq($breakpoint, 'min') {
+//     &__col#{$modifier}-offset-0 {
+//       margin-left: 0;
+//     }
+//     @for $i from 1 through $grid-cols {
+//       &__col#{$modifier}-#{$i} {
+//         flex-basis: calc(100 / ($grid-cols / $i) ) * 1%;
+//         padding: 0 1rem;
+//       }
+//       &__col#{$modifier}-offset-#{$i} {
+//         margin-left: calc(100 / ($grid-cols / $i) ) * 1%;
+//       }
+//     }
+//   }
+// }
+
+// @each $modifier , $breakpoint in $map-grid-props {
+//   @if($modifier == '') {
+//     $modifier: '-xs';
+//   }
+//   @include create-mq($breakpoint - 1, 'max') {
+//     .hidden#{$modifier}-down {
+//       display: none !important;
+//     }
+//   }
+//   @include create-mq($breakpoint, 'min') {
+//     .hidden#{$modifier}-up {
+//       display: none !important;
+//     }
+//   }
+// }
+

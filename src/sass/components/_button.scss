@@ -1,0 +1,25 @@
+@use "../abstract/colors" as *;
+
+.button{
+    display:inline-block;
+    padding:0.5em 3em;
+    border: 5px solid $complementary-color-1 !important;
+    margin:0 0.3em 0.3em 0;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: $primary-color;
+    color: $complementary-color-1;
+    cursor: pointer;
+    }
+    .button:hover{
+    color:$primary-color;
+    border: 5px solid $primary-color !important;
+    background-color: $complementary-color-1;
+    }
+    .button:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+    }

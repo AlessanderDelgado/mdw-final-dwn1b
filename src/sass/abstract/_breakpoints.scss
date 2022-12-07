@@ -1,0 +1,23 @@
+$breakpoints:(
+    small: 20em, // 321px
+    medium: 45em, // 720px
+    large: 80em, // 1280
+    xlarge: 105em // 1680
+);
+$columns: 12;
+// @use "sass:map";
+
+// $grid__bp-sm: 576;
+// $grid__bp-md: 768;
+// $grid__bp-lg: 992;
+// $grid__bp-xl: 1200;
+// $grid__bp-xxl: 1680;
+// $grid__cols: 12;
+
+// $map-grid-props: (
+//         '': 0,
+//         '-sm': $grid__bp-sm,
+//         '-md': $grid__bp-md,
+//         '-lg': $grid__bp-lg,
+//         '-xl': $grid__bp-xl
+// );

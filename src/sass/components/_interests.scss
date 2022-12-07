@@ -1,0 +1,36 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/colors" as *;
+
+.interest--container{
+    background-color: $complementary-color-30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.interest--container h2{
+    font-size: 2rem;
+    color: $complementary-color-100;
+    margin-bottom: 4rem;
+}
+
+.interest-cards--container span{
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 1rem 0 0 0;
+}
+
+.interest-card--image {
+    background-color: $complementary-color;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

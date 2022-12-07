@@ -1,0 +1,80 @@
+@use "../abstract/colors" as *;
+
+.quick-cards{
+    background-color: $complementary-color-20;
+}
+
+.container-quick-cards {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+
+.container-quick-cards article {
+    background-color: $complementary-color;
+    padding: 2rem;
+    border-radius: 3px;
+    border: 1px solid $complementary-color-100;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.quick-cards-title h2{
+    font-size: 2rem;
+    color: $primary-color;
+    margin: 0;
+}
+
+.quick-cards-title p{
+    font-size: 1.3rem;
+    margin: 0 1rem 0 0;
+}
+
+.quick-cards-icon--map,
+.quick-cards-icon--hotel,
+.quick-cards-icon--sleep,
+.quick-cards-icon--map2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 300px;
+    height: 80px;
+    font-size: 0;
+}
+
+.quick-cards-icon--map{
+    background-image: url("../img/home/icon/map-1.svg");
+}
+.quick-cards-icon--hotel{
+    background-image: url("../img/home/icon/hotel.svg");
+}
+.quick-cards-icon--sleep{
+    background-image: url("../img/home/icon/sleep.svg");
+}
+.quick-cards-icon--map2{
+    background-image: url("../img/home/icon/map-2.svg");
+}
+
+
+.quick-cards-arrow--left,
+.quick-cards-arrow--right,
+.top-ten-icon--top{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+}
+
+.quick-cards-arrow--left{
+    background-image: url("../img/home/icon/left-arrow.svg");
+}
+
+.quick-cards-arrow--right {
+    background-image: url("../img/home/icon/right-arrow.svg");
+}

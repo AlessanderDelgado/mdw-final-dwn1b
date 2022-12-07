@@ -1,0 +1,30 @@
+@use "../abstract/colors" as *;
+
+.poi-text--container{
+    background-color: $complementary-color-20;
+    margin-top: -9rem;
+}
+
+.poi-text--titles h2,
+.poi-text--titles h3,
+.poi-text--titles h4{
+    font-weight: 500;
+}
+
+.poi-text--phrase{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.poi-text--phrase h2{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.poi-text--phrase p{
+    font-size: 2rem;
+}

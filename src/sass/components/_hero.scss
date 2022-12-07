@@ -1,0 +1,81 @@
+.hero-banner-arch{
+    background-image: url("../img/home/hero-arch-image.jpg");
+    width: 1200px;
+    height: 548px;
+    text-align: center;
+    line-height: 0;
+}
+
+.hero-banner-eiffel{
+    background-image: url("../img/home/hero-eiffel-image.png");
+    width: 1200px;
+    height: 737px;
+}
+
+.hero-banner-eiffel h2 {
+    font-weight: 400;
+}
+
+.hero-banner-eiffel h3 {
+    font-weight: 500;
+}
+
+.hero-banner-eiffel .column1{
+    width: 70%;
+    float: left;
+    margin-left: -200px;
+    margin-right: 2rem;
+    overflow: hidden;
+
+}
+.hero-banner-eiffel .column2{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+
+}
+
+.hero-banner-map{
+    background-image: url("../img/tickets/hero-banner.jpg");
+    width: 1200px;
+    height: 741px;
+    text-align: center;
+    line-height: 0;
+    margin-top: 5rem;
+    position: relative;
+}
+.hero-banner-map--bottom{
+    background-image: url("../img/tickets/hero-banner-2.png");
+    width: 1200px;
+    height: 334px;
+    text-align: center;
+    line-height: 0;
+    position: relative;
+    margin-top: -2px;
+}
+
+.hero-banner--text{
+    position: absolute;
+    right: 7%;
+    bottom: 25%;
+}
+
+.hero-banner--text h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.hero-banner--text p{
+    font-size: 2rem;
+}
+
+.hero-banner-poi{
+    background-image: url("../img/poi/hero-banner.png");
+    width: 1200px;
+    height: 515px;
+    text-align: center;
+    line-height: 0;
+    margin-top: 5rem;
+    position: relative;
+}

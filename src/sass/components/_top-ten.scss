@@ -1,0 +1,62 @@
+.top-ten--container{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.top-ten--container h2{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.top-ten-icon--top{
+    background-image: url("../img/home/icon/top-ten.svg");
+    background-color: white;
+    background-size: 80px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border: .3rem solid black;
+}
+
+.top-ten--gallery,
+.interest-cards--container,
+.route-map--container,
+header{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.top-ten--gallery li,
+.top-ten--gallery ul,
+.interest--container ul,
+.top-ten--container ul,
+.route-map--column ul,
+.ticket-cards--container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-ten--gallery figure{
+    width: 220px;
+    margin: 0;
+}
+
+.top-ten--gallery img{
+    display: block;
+}
+
+
+.top-ten--gallery figcaption{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-weight: 500;
+}

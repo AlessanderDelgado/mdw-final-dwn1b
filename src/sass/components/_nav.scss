@@ -2,7 +2,6 @@ nav{
     ul{
         display: flex;
         justify-content: space-around;
-        rotate: 6deg;
         width: 100%;
     }
     li{
@@ -13,16 +12,5 @@ nav{
     }
     a{
         text-decoration: none;
-    }
-    .menu ul {
-        margin: 2rem 0 0 0 ;
-        padding: 0;
-        display: flex;
-    }
-
-    .menu li {
-        list-style: none;
-        padding: .3rem 1rem;
-        text-transform: uppercase;
     }
 }

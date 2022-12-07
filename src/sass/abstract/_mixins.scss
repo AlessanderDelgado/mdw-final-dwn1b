@@ -26,26 +26,26 @@
 
 // COLUMNS LAYOUT
 
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
+// .row{
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
-[class^=col-]{
-  flex-basis:100%;
-  padding: 0 .5rem;
-}
+// [class^=col-]{
+//   flex-basis:100%;
+//   padding: 0 .5rem;
+// }
 
-@media (min-width: 40em){
-    @for $i from 1 through $columns {
-        .col-#{$i} {
-            flex: 0 0 calc(100% / ($columns / $i));
-        }
-        // .col-offset-#{$i}{
-        //     margin-left: calc(100% / (($columns / $i)));
-        // }
-    }
-}
+// @media (min-width: 40rem){
+//     @for $i from 1 through $columns {
+//         .col-#{$i} {
+//             flex: 0 0 calc(100% / ($columns / $i));
+//         }
+//         // .col-offset-#{$i}{
+//         //     margin-left: calc(100% / (($columns / $i)));
+//         // }
+//     }
+// }
 
 
 

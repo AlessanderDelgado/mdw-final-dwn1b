@@ -1,14 +1,19 @@
 nav{
+    &.menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     ul{
         display: flex;
-        justify-content: space-around;
-        width: 100%;
     }
     li{
         list-style: none;
         text-transform: uppercase;
-        padding: 1rem 0;
-        margin-top: 2rem;
+        padding: 1rem;
+        &:last-of-type{
+            padding-right: 0;
+        }
     }
     a{
         text-decoration: none;

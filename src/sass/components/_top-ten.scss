@@ -1,3 +1,6 @@
+@use "../abstract/breakpoints" as *;
+@use "../abstract/colors" as *;
+
 .top-ten--container{
     background-color: black;
     display: flex;
@@ -23,16 +26,23 @@
     border: .3rem solid black;
 }
 
-.top-ten--gallery,
-.interest-cards--container,
-.route-map--container,
-header{
-    max-width: 120rem;
-    width: 95%;
+.top-ten--gallery {
+    max-width: map-get($breakpoints, large);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
+
+// .top-ten--gallery,
+// .interest-cards--container,
+// .route-map--container,
+// header{
+//     max-width: 120rem;
+//     width: 95%;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+// }
 .top-ten--gallery li,
 .top-ten--gallery ul,
 .interest--container ul,

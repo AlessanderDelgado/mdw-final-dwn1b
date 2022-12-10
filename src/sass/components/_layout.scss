@@ -13,7 +13,7 @@ body {
 
 .container {
   max-width: map-get($breakpoints, large);
-  width: 95%;
+  // width: 95%;
   margin: 0 auto;
 }
 
@@ -40,10 +40,6 @@ a:hover{
 
 .container-absolute{
   position: relative;
-}
-
-.text-container{
-  display: inline-block;
 }
 
 .text-phrase{

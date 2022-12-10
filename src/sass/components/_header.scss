@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: map-get($breakpoints, large);
+    margin: 0 auto;
 }
 
 /* header .logo img:before {

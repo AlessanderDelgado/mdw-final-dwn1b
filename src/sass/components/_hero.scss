@@ -1,19 +1,32 @@
 .hero-banner-arch{
-    background-image: url("../assets/img/home/hero-arch-image-2.jpg");
-    width: 1660px;
-    height: 748px;
+    background-image: url("../assets/img/home/hero-arch-image-3.jpg");
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    width: 1366px;
+    height: 640px;
     text-align: center;
     line-height: 0;
+    mix-blend-mode: darken;
 }
 
 .hero-banner-eiffel{
-    background-image: url("../assets/img/home/hero-eiffel-image.png");
-    width: 1200px;
-    height: 737px;
+    background-image: url("../assets/img/home/hero-eiffel-image-3.jpg");
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    width: 1366px;
+    height: 650px;
+    mix-blend-mode: darken;
 }
 
 .hero-banner-eiffel h2 {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 1rem;
+    &:first-of-type{
+        margin-top: 0;
+    }
 }
 
 .hero-banner-eiffel h3 {

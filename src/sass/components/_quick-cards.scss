@@ -1,26 +1,31 @@
 @use "../abstract/colors" as *;
+@use "../abstract/breakpoints" as *;
 
 .quick-cards{
     background-color: $complementary-color-20;
 }
 
 .container-quick-cards {
-    max-width: 120rem;
-    width: 95%;
+    max-width: map-get($breakpoints, large);
+    // width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
-    padding: 4rem 0;
+    justify-content: space-between;
+    padding: 3rem 0;
 }
 
 .container-quick-cards article {
     background-color: $complementary-color;
-    padding: 2rem;
+    padding: 1rem 2rem;
     border-radius: 3px;
     border: 1px solid $complementary-color-100;
     display: flex;
     align-items: center;
-    width: 40%;
+    margin-right: 1.5rem;
+    width: 50%;
+    &:last-of-type{
+        margin-right: 0;
+    }
 }
 
 .quick-cards-title h2{
@@ -30,7 +35,7 @@
 }
 
 .quick-cards-title p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0 1rem 0 0;
 }
 
@@ -41,9 +46,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    width: 300px;
+    width: 400px;
     height: 80px;
     font-size: 0;
+    margin: 0 1rem;
 }
 
 .quick-cards-icon--map{
@@ -66,7 +72,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    width: 80px;
+    width: 150px;
     height: 80px;
     font-size: 0;
 }

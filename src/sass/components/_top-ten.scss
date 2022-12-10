@@ -2,33 +2,35 @@
 @use "../abstract/colors" as *;
 
 .top-ten--container{
-    background-color: black;
+    background-color: $complementary-color-100;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: $complementary-color;
     padding-bottom: 4rem;
 }
 
 .top-ten--container h2{
     font-size: 2rem;
     margin-bottom: 4rem;
+    font-weight: 500;
 }
 
 .top-ten-icon--top{
     background-image: url("../assets/img/home/icon/top-ten.svg");
-    background-color: white;
+    background-color: $complementary-color;
     background-size: 80px;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-top: -50px;
-    border: .3rem solid black;
+    border: .5rem solid $complementary-color-100;
 }
 
 .top-ten--gallery {
     max-width: map-get($breakpoints, large);
     margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -65,8 +67,8 @@
 
 
 .top-ten--gallery figcaption{
-    background-color: white;
-    color: black;
+    background-color: $complementary-color;
+    color: $complementary-color-100;
     padding: 1rem;
     font-weight: 500;
 }

@@ -1,5 +1,6 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/colors" as *;
+@use "../abstract/breakpoints" as *;
 
 .interest--container{
     background-color: $complementary-color-30;
@@ -15,9 +16,17 @@
     margin-bottom: 4rem;
 }
 
+.interest-cards--container{
+    max-width: map-get($breakpoints, large);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .interest-cards--container span{
-    font-weight: 400;
-    font-size: 1.7rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     margin: 1rem 0 0 0;
 }
 
@@ -25,8 +34,8 @@
     background-color: $complementary-color;
     border-radius: 3px;
     padding: 1rem;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 1.6rem;
     display: flex;

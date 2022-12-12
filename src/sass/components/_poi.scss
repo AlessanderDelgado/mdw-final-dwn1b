@@ -1,30 +1,25 @@
 @use "../abstract/colors" as *;
+@use "../abstract/breakpoints" as *;
 
 .poi-text--container{
     background-color: $complementary-color-20;
-    margin-top: -9rem;
+    max-width: map-get($breakpoints, large);
+    margin: 0 auto;
+    margin-top: -4rem;
 }
 
-.poi-text--titles h2,
-.poi-text--titles h3,
-.poi-text--titles h4{
-    font-weight: 500;
-}
 
 .poi-text--phrase{
-    max-width: 120rem;
-    width: 95%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-}
-
-.poi-text--phrase h2{
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.poi-text--phrase p{
-    font-size: 2rem;
+    padding: 3rem 0;
+    p {
+        font-size: 1.4rem;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
 }

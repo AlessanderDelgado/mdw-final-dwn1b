@@ -61,15 +61,7 @@
     mix-blend-mode: darken;
     position: relative;
 }
-.hero-banner-map--bottom{
-    background-image: url("../assets/img/tickets/hero-banner-2.png");
-    width: 1200px;
-    height: 334px;
-    text-align: center;
-    line-height: 0;
-    position: relative;
-    margin-top: -2px;
-}
+
 
 .hero-banner--text{
     position: absolute;
@@ -89,11 +81,15 @@
 }
 
 .hero-banner-poi{
-    background-image: url("../assets/img/poi/hero-banner.png");
-    width: 1200px;
-    height: 515px;
+    background-image: url("../assets/img/poi/hero-banner-poi.jpg");
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    width: 1366px;
+    height: 690px;
     text-align: center;
     line-height: 0;
-    margin-top: 5rem;
+    mix-blend-mode: darken;
     position: relative;
 }

@@ -59,10 +59,12 @@
 .top-ten--gallery figure{
     width: 220px;
     margin: 0;
+    border-radius: 3px;
 }
 
 .top-ten--gallery img{
     display: block;
+    border-radius: 3px 3px 0 0;
 }
 
 
@@ -71,4 +73,5 @@
     color: $complementary-color-100;
     padding: 1rem;
     font-weight: 500;
+    border-radius: 0 0 3px 3px;
 }

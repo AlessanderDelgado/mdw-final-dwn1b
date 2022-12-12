@@ -93,14 +93,30 @@ footer h2{
 }
 
 
-footer .bottomFooter{
-  background-color: $primary-color-200;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3rem;
-  padding: 1rem 0;
+footer{
+ .bottomFooter{
+    background-color: $primary-color-200;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+  }
+  .maker{
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        margin: 0 1rem;
+        &:first-of-type{
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 footer a{

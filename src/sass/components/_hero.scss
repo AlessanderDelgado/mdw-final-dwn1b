@@ -49,12 +49,16 @@
 }
 
 .hero-banner-map{
-    background-image: url("../assets/img/tickets/hero-banner.jpg");
-    width: 1200px;
-    height: 741px;
+    background-image: url("../assets/img/tickets/hero-banner-3.jpg");
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    width: 1366px;
+    height: 1389px;
     text-align: center;
     line-height: 0;
-    margin-top: 5rem;
+    mix-blend-mode: darken;
     position: relative;
 }
 .hero-banner-map--bottom{
@@ -69,18 +73,19 @@
 
 .hero-banner--text{
     position: absolute;
-    right: 7%;
-    bottom: 25%;
+    right: 4%;
+    bottom: 48%;
 }
 
 .hero-banner--text h2{
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
 }
 
 .hero-banner--text p{
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .hero-banner-poi{

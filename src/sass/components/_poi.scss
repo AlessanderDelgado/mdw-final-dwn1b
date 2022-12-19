@@ -1,25 +1,99 @@
 @use "../abstract/colors" as *;
 @use "../abstract/breakpoints" as *;
 
-.poi-text--container{
-    background-color: $complementary-color-20;
-    max-width: map-get($breakpoints, large);
-    margin: 0 auto;
-    margin-top: -4rem;
-}
-
-
-.poi-text--phrase{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 0;
-    p {
-        font-size: 1.4rem;
-    }
-    h2{
+.poi {
+    h2 {
         font-weight: 400;
         font-size: 2.5rem;
         text-transform: uppercase;
         margin-bottom: 1rem;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.poi-text--container{
+    background-color: $complementary-color-40;
+    margin-top: -6.3rem;
+}
+
+
+.poi-text_phrase{
+    display: flex;
+    flex-direction: column;
+    max-width: map-get($breakpoints, large);
+    margin: 0 auto;
+    padding: 3rem 0;
+    p {
+        font-size: 1.4rem;
+    }
+    &--center{
+        @extend .poi-text_phrase;
+        text-align: center;
+    }
+
+}
+
+.poi-text {
+    &_container {
+        display: flex;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+    &_column {
+        flex: 50%;
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &_column--images {
+        display: flex;
+        flex: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        figure {
+            width: 460px;
+            margin: 0 auto;
+            border-color: $complementary-color-100;
+            border-width: 3px;
+            border-style: dashed solid solid dashed;
+            border-radius: 3px;
+            figcaption {
+                text-align: center;
+                background-color: $complementary-color-80;
+                padding: 1rem;
+                color: $complementary-color;
+            }
+        }
+    }
+}
+
+// .poi-main_title {
+//     font-size: 2rem;
+// }
+
+// .poi-secondary_title {
+//     font-size: 1.5rem;
+// }
+
+.intro-text--container p:first-of-type{
+    margin-top: 0;
+}
+
+.intro-text--container{
+    margin: 3rem 0;
+    column-count: 2;
+    column-gap: 40px;
+    column-width: 50%;
+    h3 {
+        font-weight: 500;
     }
 }

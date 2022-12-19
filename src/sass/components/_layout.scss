@@ -58,20 +58,6 @@ a:hover{
   font-size: 0;
 }
 
-.intro-text--container p:first-of-type{
-  margin-top: 0;
-}
-.intro-text--container{
-  margin: 3rem 0;
-  column-count: 2;
-  column-gap: 40px;
-  column-width: 50%;
-}
-
-.intro-text--container h3{
-  font-weight: 500;
-}
-
 footer{
   background-color: $primary-color;
   color: $complementary-color;

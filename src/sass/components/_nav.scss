@@ -1,3 +1,5 @@
+@use "../abstract/colors" as *;
+
 nav{
     &.menu {
         display: flex;
@@ -17,5 +19,9 @@ nav{
     }
     a{
         text-decoration: none;
+        &.menu--selected {
+            color: $primary-color;
+            border-bottom: 3px dashed $primary-color;
+        }
     }
 }

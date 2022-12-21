@@ -1,0 +1,74 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/colors" as *;
+
+.form-container {
+    text-align: center;
+    background-color: $complementary-color-30;
+    padding: 2rem 4rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+    h2 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        span {
+            display: block;
+            font-size: 1.4rem;
+            color: $complementary-color-50;
+        }
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+}
+
+
+.form-input {
+    &-row {
+        display: flex;
+        gap: 2rem;
+    }
+    &--style{
+        border: none;
+        border-bottom: 1px solid $complementary-color-40;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+        margin: 1.5rem 0;
+        background-color: $complementary-color-30;
+        height: 55px;
+        width: 100%;
+        &:active,
+        &:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-color: $complementary-color-100;
+        }
+    }
+    &-checkbox {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        &--item {
+            display: flex;
+            gap: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.form-text--message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 3rem;
+    text-align: center;
+    h3 {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+}

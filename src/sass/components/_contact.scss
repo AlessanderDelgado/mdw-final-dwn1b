@@ -64,8 +64,8 @@
     flex-direction: column;
     // align-items: center;
     justify-content: center;
-    height: 500px;
-    padding: 3rem;
+    // height: 500px;
+    padding: 3rem 0;
     text-align: left;
     h4 {
         font-weight: 500;
@@ -77,17 +77,58 @@
         font-size: 1.2rem;
     }
     ol {
-        // margin-left: 1rem;
-        // box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        padding: 1rem;
+        padding: .5rem 2rem;
         border-radius: 5px;
         border: 2px dashed $complementary-color-50;
         li{
             margin-left: 1rem;
             border-bottom: 1px solid $complementary-color-50;
             padding: 1rem 0;
+            cursor: pointer;
             &:last-of-type {
                 border-bottom: none;
+            }
+            p {
+                color: $complementary-color-50;
+                margin-bottom: .5rem;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            &.selected-item,
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.thanks_phrase {
+    text-align: center;
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 2rem 0;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $complementary-color-20;
+        margin: 1rem 0 2rem 0;
+        background-color: $primary-color-200;
+        display: inline-block;
+        padding: 1rem;
+    }
+    p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        span {
+            font-weight: 600
+        }
+        a {
+            color: $primary-color;
+            &:hover {
+                color: $primary-color-200;
             }
         }
     }

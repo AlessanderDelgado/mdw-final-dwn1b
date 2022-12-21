@@ -7,7 +7,6 @@
 
 .container-quick-cards {
     max-width: map-get($breakpoints, large);
-    // width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -32,6 +31,7 @@
     font-size: 2rem;
     color: $primary-color;
     margin: 0;
+    text-transform: none;
 }
 
 .quick-cards-title p{

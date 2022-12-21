@@ -13,7 +13,6 @@ body {
 
 .container {
   max-width: map-get($breakpoints, large);
-  // width: 95%;
   margin: 0 auto;
 }
 
@@ -43,13 +42,11 @@ a:hover{
 }
 
 .text-phrase{
-  max-width: 120rem;
-  width: 95%;
-  margin: 0 auto;
-  padding: 3rem 8rem;
+  max-width: map-get($breakpoints, large);
+  margin: 2rem auto;
+  padding: 4rem 0;
   font-style: italic;
   font-size: 2rem;
-  margin-bottom: 3rem;
   text-align: center;
 }
 

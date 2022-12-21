@@ -1,5 +1,6 @@
 @use "../abstract/mixins" as *;
 @use "../abstract/breakpoints" as *;
+@use "../abstract/mixins" as *;
 
 .header {
     display: flex;
@@ -21,10 +22,15 @@
 } */
 
 .isologo{
-    background-image: url("../assets/img/home/isologo.png");
-    width: 241px;
-    height: 66px;
+    background-image: url("../assets/img/home/isologo-2.png");
+    width: 35px;
+    height: 33px;
     mix-blend-mode: darken;
+    @include mq(large) {
+        background-image: url("../assets/img/home/isologo.png");
+        width: 241px;
+        height: 66px;
+    }
 }
 
 .isologo h1{

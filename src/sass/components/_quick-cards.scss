@@ -1,5 +1,6 @@
 @use "../abstract/colors" as *;
 @use "../abstract/breakpoints" as *;
+@use "../abstract/mixins" as *;
 
 .quick-cards{
     background-color: $complementary-color-20;
@@ -9,8 +10,12 @@
     max-width: map-get($breakpoints, large);
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 3rem 0;
+    @include mq(large) {
+        flex-direction: row;
+    }
 }
 
 .container-quick-cards article {

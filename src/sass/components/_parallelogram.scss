@@ -5,15 +5,24 @@
 .eiffel-image {
     float: left;
     display: flex;
-    width: 320px;
+    width: 100%;
     height: 190px;
     shape-outside: polygon(2px 11px, 65.58% 12px, 0.86% 102.32%);
-    shape-margin: .2rem;
+    shape-margin: .7rem;
+    @include mq(small) {
+        height: 344px;
+        shape-outside: polygon(2px 11px, 77.48% 11px, -0.22% 69.05%);
+        shape-margin: 1rem;
+    }
+    @include mq(medium) {
+        height: 400px;
+        shape-outside: polygon(-2px 6px, 67.76% 1px, 0.10% 113.52%);
+        shape-margin: 1.5rem;
+    }
     @include mq(large) {
-        float: left;
         width: 940px;
-        height: 650px;
-        shape-outside: polygon(265px 4px, 100.22% 3px, 27.47% 93.34%);
+        height: 660px;
+        shape-outside: polygon(156px 2px, 93.84% 2px, 15.35% 99.36%);
         shape-margin: 1.5rem;
     }
 }

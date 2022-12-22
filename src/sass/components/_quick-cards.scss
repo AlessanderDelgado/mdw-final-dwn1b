@@ -2,19 +2,19 @@
 @use "../abstract/breakpoints" as *;
 @use "../abstract/mixins" as *;
 
-.quick-cards{
-    background-color: $complementary-color-20;
-}
-
 .container-quick-cards {
     max-width: map-get($breakpoints, large);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem 0;
-    @include mq(large) {
+    padding: 3rem 1rem;
+    gap: 1rem;
+    @include mq(medium) {
         flex-direction: row;
+        padding: 3rem 1rem;
+        gap: 0;
+        margin-top: 1rem;
     }
 }
 
@@ -24,24 +24,33 @@
     border-radius: 3px;
     border: 1px solid $complementary-color-100;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 1.5rem;
-    width: 50%;
+    width: 100%;
     &:last-of-type{
         margin-right: 0;
+    }
+    @include mq(medium) {
+        width: 49%;
     }
 }
 
 .quick-cards-title h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $primary-color;
     margin: 0;
     text-transform: none;
+    @include mq(medium) {
+        font-size: 2rem;
+    }
 }
 
 .quick-cards-title p{
-    font-size: 1.1rem;
+    font-size: 0;
     margin: 0 1rem 0 0;
+    @include mq(medium) {
+        font-size: 1.1rem;
+    }
 }
 
 .quick-cards-icon--map,
@@ -58,10 +67,18 @@
 }
 
 .quick-cards-icon--map{
-    background-image: url("../assets/img/home/icon/map-1.svg");
+    display: none;
+    @include mq(medium) {
+        display: block;
+        background-image: url("../assets/img/home/icon/map-1.svg");
+    }
 }
 .quick-cards-icon--hotel{
-    background-image: url("../assets/img/home/icon/hotel.svg");
+    display: none;
+    @include mq(medium) {
+        display: block;
+        background-image: url("../assets/img/home/icon/hotel.svg");
+    }
 }
 .quick-cards-icon--sleep{
     background-image: url("../assets/img/home/icon/sleep.svg");
@@ -77,9 +94,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    width: 150px;
-    height: 80px;
+    width: 27px;
+    height: 20px;
     font-size: 0;
+    @include mq(medium) {
+        width: 150px;
+        height: 80px;
+    }
+
 }
 
 .quick-cards-arrow--left{

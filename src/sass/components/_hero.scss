@@ -7,11 +7,21 @@
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
-    width: 320px;
-    height: 190px;
+    // width: 320px;
+    height: 200px;
     text-align: center;
     line-height: 0;
     mix-blend-mode: darken;
+    @include mq(small) {
+        background-size: 540px;
+        background-image: url("../assets/img/home/hero-arch-image-4.jpg");
+        height: 300px;
+    }
+    @include mq(medium) {
+        background-image: url("../assets/img/home/hero-arch-image-3.jpg");
+        background-size: 720px;
+        height: 440px;
+    }
     @include mq(large) {
         background-image: url("../assets/img/home/hero-arch-image-3.jpg");
         background-size: 1366px;
@@ -24,8 +34,9 @@
     background-image: url("../assets/img/home/hero-eiffel-image-4.jpg");
     background-size: 320px;
     background-repeat: no-repeat;
-    width: 320px;
-    height: 156px;
+    background-position-x: center;
+    width: 100%;
+    // height: 156px;
     mix-blend-mode: darken;
     padding: 0 1rem;
     h2 {
@@ -35,18 +46,23 @@
         &:first-of-type{
             margin-top: 0;
         }
-        @include mq(large) {
+        @include mq(medium) {
             font-weight: 500;
             font-size: 2rem;
             margin: 1rem;
         }
     }
+    @include mq(small) {
+        background-image: url("../assets/img/home/hero-eiffel-image-3.jpg");
+        background-size: 540px;
+    }
+    @include mq(medium) {
+        background-image: url("../assets/img/home/hero-eiffel-image-3.jpg");
+        background-size: 720px;
+    }
     @include mq(large) {
         background-image: url("../assets/img/home/hero-eiffel-image-3.jpg");
         background-size: 1366px;
-        width: 1366px;
-        height: 650px;
-        padding: 0;
     }
 }
 

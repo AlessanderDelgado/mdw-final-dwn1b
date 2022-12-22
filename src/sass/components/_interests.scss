@@ -7,7 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
+    @include mq(medium) {
+        padding: 3rem 0;
+    }
 }
 
 .interest--container h2{
@@ -21,7 +24,14 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 1rem;
+    @include mq(medium) {
+        justify-content: center;
+    }
 }
 
 .interest-cards--container h3{

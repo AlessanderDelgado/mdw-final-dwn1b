@@ -89,34 +89,33 @@
 
 .hero-banner-map{
     background-image: url("../assets/img/tickets/hero-banner-3.jpg");
-    background-size: 1366px;
+    background-size: 320px;
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
-    width: 1366px;
-    height: 1370px;
+    // width: 1366px;
+    height: 370px;
     text-align: center;
-    line-height: 0;
+
     mix-blend-mode: darken;
     position: relative;
-}
-
-
-.hero-banner--text{
-    position: absolute;
-    right: 4%;
-    bottom: 48%;
-}
-
-.hero-banner--text h2{
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-.hero-banner--text p{
-    font-size: 1.3rem;
+    @include mq(small) {
+        background-size: 540px;
+        background-image: url("../assets/img/tickets/hero-banner-3.jpg");
+        height: 300px;
+    }
+    @include mq(medium) {
+        background-image: url("../assets/img/tickets/hero-banner-3.jpg");
+        background-size: 720px;
+        height: 440px;
+    }
+    @include mq(large) {
+        background-image: url("../assets/img/tickets/hero-banner-3.jpg");
+        background-size: 1366px;
+        width: 1366px;
+        height: 1370px;
+        line-height: 0;
+    }
 }
 
 .hero-banner-poi{
